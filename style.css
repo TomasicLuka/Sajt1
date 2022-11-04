@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: imerest;
+    src: url(../font/RoadRage-Regular.ttf);
+}
+@font-face{
+    font-family: navmeni;
+    src: url(../font/RussoOne-Regular.ttf);
+}
+@font-face{
+    font-family: tekst;
+    src: url(../font/Baloo2-Medium.ttf);
+}
+
+#prvibody{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 85%;
+    margin: 0 auto;
+}
+
+header{
+    height: 100px;
+    background: rgb(53, 50, 46);
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+}
+
+.logo{
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 50px;
+    font-family: imerest;
+    color: rgb(255, 177, 74);
+    letter-spacing: 5px;
+}
+
+nav{
+    float: right;
+    line-height: 100px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: navmeni;
+    letter-spacing: 4px;
+    font-size: 20px;
+    color: rgb(255, 177, 74);
+}
+
+nav a:hover{
+    color: aquamarine;
+    transition: 500ms;
+}
+
+nav a::before{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: aquamarine;
+
+    width: 0%;
+    position: absolute;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    top: 100px;
+    position: fixed;
+    background-image: url(../img/slikabanner.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.banner h2{
+    padding-top: 8%;
+    font-size: 70px;
+    font-family: navmeni;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sadrzaj{
+    width: 100%;
+    position: relative;
+    top: 450px;
+    background: #ddd;
+    height: 1500px;
+}
+
+.sadrzaj h2{
+    font-family: navmeni;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.sadrzaj p{
+    width: 70%;
+    margin: 0 auto;
+    font-size: 25px;
+    padding: 2% 0;
+    font-family: tekst;
+}
+
+
+
+#kontaktbody{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/slikabanner.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+}
+
+.wrapper2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 550px;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.wrapper2 .title h1{
+    font-family: navmeni;
+    letter-spacing: 6px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.kontakt-forma{
+    display: flex;
+}
+
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.input-fields,.msg{
+  width: 48%;
+}
+
+.input-fields .input,.msg textarea{
+  font-family: tekst;
+  font-size: 20px;
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid rgb(255, 177, 74);
+  padding: 10px;
+  color: #fff;
+  width: 100%;
+}
+
+.msg textarea{
+    height: 212px;
+}
+.btn{
+    margin-top: 13px;
+    
+}
+.btn a{
+    font-family: navmeni;
+    background: rgb(255, 177, 74);
+    text-align: center;
+    padding: 15px 40px 15px 40px;
+    
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.msg textarea{
+    height: 254px;
+}
+
+.input-fields,.msg{
+    width: 100%;
+}
+
+.prazan{
+    height: 10em;
+}
+.prvi{
+    height: 290px;
+    width: 75%;
+    margin: 0 auto;
+}
+.prvi img{
+    float: left;
+    
+    width: 30%;
+}
+.drugi{
+    height: 250px;
+    width: 75%;
+    margin: 0 auto;
+}
+.drugi img{
+    float: right;
+    
+    width: 30%;
+}
+
+.burgirtekst{
+    padding: 2% 0;
+    font-family: tekst;
+    font-size: 25px;
+}
+
+.pizzatekst{
+    padding: 2% 0;
+    font-family: tekst;
+    font-size: 25px;
+}
+
+
+
+.menibody{
+    background-image: url(../img/slikabanner.jpg);
+}
+.tabela1{
+    float: left;
+    margin-left: 15%;
+}
+
+.tabela2{
+    float: right;
+    margin-right: 15%;
+  }
+
+.tabela1 td{
+    border: 6px solid rgb(255, 177, 74);
+    padding: 10px;
+    text-align: left;
+    font-family: tekst;
+    font-size: 25px;
+    background: #ddd;
+    box-shadow: 10px 10px rgb(53, 50, 46);
+    border-radius: 10px;
+}
+
+.tabela2 td{
+    border: 6px solid rgb(255, 177, 74);
+    padding: 10px;
+    text-align: left;
+    font-family: tekst;
+    font-size: 25px;
+    background: #ddd;
+    box-shadow: 10px 10px rgb(53, 50, 46);
+    border-radius: 10px;
+}
+
+.naslovtab1{
+    font-family: navmeni;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    background: #ddd;
+    border-radius: 10px;
+    padding: 6px;
+    box-shadow: 10px 10px rgb(255, 177, 74);
+    margin: 10px;
+}
+
+.tabela1 a{
+    text-decoration: none;
+    color: black;
+    font-family: navmeni;
+    background-color: rgb(255, 177, 74);
+    border-radius: 7px;
+    padding: 7px;
+    box-shadow: 3px 3px rgb(53, 50, 46);
+}
+.tabela2 a{
+    text-decoration: none;
+    color: black;
+    font-family: navmeni;
+    background-color: rgb(255, 177, 74);
+    border-radius: 7px;
+    padding: 7px;
+    box-shadow: 3px 3px rgb(53, 50, 46);
+}
+
+.tabela1 tr :hover{
+    background: rgb(255, 177, 74);
+    transition: 250ms;
+}
+.tabela2 tr :hover{
+    background: rgb(255, 177, 74);
+    transition: 250ms;
+}
